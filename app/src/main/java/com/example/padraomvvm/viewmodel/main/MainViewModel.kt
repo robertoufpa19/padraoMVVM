@@ -22,6 +22,8 @@ class MainViewModel constructor(private val repository: MainRepository) : ViewMo
                  // quando ouver uma resposta
                 liveList.postValue(response.body())
 
+                erroMessage.postValue(response.body().toString())
+
             }
 
             override fun onFailure(call: Call<List<Live>>, t: Throwable) {

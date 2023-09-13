@@ -2,7 +2,7 @@ package com.example.padraomvvm.models
 
 data class Live(
     var title : String,
-    var autor : String,
+    var author : String,
     var thumbnailUrl : String,
     var link  : String
 )
